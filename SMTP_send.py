@@ -20,8 +20,8 @@ def _format_addr(s):
 # to_addr = raw_input('To: ')
 # smtp_server = raw_input('SMTP server: ')
 
-from_addr = "18701073912@126.com"
-password = "zh9062"
+from_addr = "xxxxxxx@126.com"
+password = "xxxxx"
 to_addr = "2928807616@qq.com"
 smtp_server = "smtp.126.com"
 
