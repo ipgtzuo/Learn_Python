@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guestbook</title>
+    <link rel="stylesheet" href="../static/main.css" type="text/css" />
+</head>
+<body>
+    <div id="main">
+        <h1>Guestbook</h1>
+        <div id="form-area">
+            <p>请在此评论</p>
+            <form action="/post" method="post">
+                <table>
+                    <tr>
+                       <th>姓名</th>
+                       <td>
+                           <input type="text" size="20" name="name"/>
+                       </td>
+                    </tr>
+                    <tr>
+                        <th>评论</th>
+                        <td>
+                            <textarea rows="5" cols="40" name="comments"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <p><button type="submit">提交</button></p>
+            </form>
+        </div>
+        <div id="entries-area">
+            <h2>评论记录：</h2>
+            <div class="entry"></div>
+                {% for greeting in greeting_list %}
+                <h5>{{ greeting.name }} commented at {{ greeting.create_at|datetime_fmt }}:</h5>
+                <div class="comment_content">{{ greeting.comment|nl2br }}</div>
+            {% endfor %}
+        </div>
+    </div>
+
+</body>
+</html>

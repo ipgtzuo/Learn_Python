@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #000e41;
+    background-color: #004080;
+}
+
+h1 {
+    padding: 0 1em;
+    color: #fff;
+}
+
+#main {
+    padding: 0;
+}
+
+
+#form-area {
+    padding: 0.5em 2em;
+    background-color: #78b8f8;
+}
+
+#entries-area {
+    padding: 0.5em 2em;
+    background-color: #fff;
+}
+
+.comment_content {
+    padding: 0.5em 1em;
+    background-color: #dbdbff;
+}
