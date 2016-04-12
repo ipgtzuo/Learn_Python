@@ -1,3 +1,4 @@
+```python
 # --*-- coding: utf-8 --*--
 
 # 将abc def形式的字符串翻转成def abc，并且去掉多余的空格。
@@ -14,3 +15,4 @@ class Solution:
 s = "Hello World."
 a = Solution()
 print a.reverseWords(s)
+```
