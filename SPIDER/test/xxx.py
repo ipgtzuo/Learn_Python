@@ -37,4 +37,4 @@ soup = BeautifulSoup(html_doc, 'lxml')
 
 
 # print soup.get_text()
-print BeautifulSoup("Sacr&eacute; bleu!", 'lxml')
+print (BeautifulSoup("Sacr&eacute; bleu!", 'lxml'))
