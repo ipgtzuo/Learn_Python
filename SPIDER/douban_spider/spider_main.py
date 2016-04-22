@@ -1,7 +1,8 @@
 # --*--coding: utf-8 --*--
 import re
+import time
 
-from douban_spider import downloader, parser, outputer
+import downloader, parser, outputer
 
 from SPIDER.douban_spider import url_manager
 
@@ -28,8 +29,8 @@ class SpiderMain(object):
             self.urls.add_new_urls(new_url)
             self.outputer.collect_data(new_data)
 
-            if count == 20:
-                break
+            # if count == 1000:
+            #     break
             count += 1
 
         self.outputer.output_html()
